@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Check if the correct number of arguments are provided
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <destination_directory>"
+    exit 1
+fi
+
+DEST_DIR=$1
+REPO_URL="https://github.com/xXx-insane-xXx/CPP23VScodeTemplateProject"
+TEMP_DIR=$(mktemp -d)
+
+# Function to clean up the temporary directory on exit
+cleanup() {
+    rm -rf "$TEMP_DIR"
+}
+trap cleanup EXIT
+
+# Clone the repository with depth 1
+git clone --depth=1 "$REPO_URL" "$TEMP_DIR" || exit
+
+# Copy the .vscode folder to the destination directory
+cp -r "$TEMP_DIR/.vscode" "$DEST_DIR" || exit
+
+echo "Successfully copied .vscode folder to $DEST_DIR"
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Default session is Xfce
+session=${1:-i3}
+
+# Launch the X server using startx and pass the session name to .xinitrc
+startx ~/.xinitrc $session
+

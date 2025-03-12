@@ -1,0 +1,1 @@
+sxiv -tr ~/Main/Wallpapers
