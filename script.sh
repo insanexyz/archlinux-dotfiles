@@ -30,8 +30,6 @@ ln -snf ~/.dotfiles/config/sxiv ~/.config/sxiv
 rm -rf ~/.config/yt-dlp
 ln -snf ~/.dotfiles/config/yt-dlp ~/.config/yt-dlp
 
-rm -rf ~/.emacs.d
-ln -snf ~/.dotfiles/home/.emacs.d ~/.emacs.d
 ln -snf ~/.dotfiles/home/.bashrc ~/.bashrc
 ln -snf ~/.dotfiles/home/.xinitrc ~/.xinitrc
 ln -snf ~/.dotfiles/home/.Xresources ~/.Xresources
@@ -45,5 +43,7 @@ ln -snf ~/.dotfiles/local/share/icons/* ~/.local/share/icons
 
 echo "Symlinks created. System is ready to use"
 
-# Todo: delete dir or file only if its normal folder, and not when its symlink
+# Todo: Delete dir or file only if its normal folder, and not when its symlink
+#       Also check in the current folder if that dir exists in the first place to symlink it otherwise it will 
+#       result in   loss of config file.
 
