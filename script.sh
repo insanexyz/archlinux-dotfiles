@@ -21,8 +21,7 @@ rm -rf ~/.config/i3
 ln -snf ~/.dotfiles/config/i3 ~/.config/i3
 rm -rf ~/.config/mpv
 ln -snf ~/.dotfiles/config/mpv ~/.config/mpv
-rm -rf ~/.config/nvim
-ln -snf ~/.dotfiles/config/nvim ~/.config/nvim
+ln -snf ~/.dotfiles/config/vim/vimrc ~/.config/vim/vimrc
 rm -rf ~/.config/picom
 ln -snf ~/.dotfiles/config/picom ~/.config/picom
 rm -rf ~/.config/sxiv
