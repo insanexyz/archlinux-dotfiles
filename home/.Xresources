@@ -5,3 +5,22 @@ Xft.hinting: 1
 Xft.rgba: rgb
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
+
+*.font: xft:Fira Code:style=Regular:size=15
+*.background: #18181A
+*.foreground: #B6B3B2
+*.cursorColor: #8C8380
+
+! Restore Ctrl+Shift+(c|v)
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!! Transparency
+!URxvt*depth: 32
+!URxvt.background: [70]#000000
+
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt*internalBorder: 10
