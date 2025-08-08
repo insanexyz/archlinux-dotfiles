@@ -25,7 +25,6 @@ ln -s ~/.dotfiles/home/.xinitrc ~/
 ln -s ~/.dotfiles/home/.Xresources ~/
 ln -s ~/.dotfiles/home/.profile ~/
 
-ln -s ~/.dotfiles/local/bin ~/.local/
 ln -s ~/.dotfiles/local/scripts ~/.local/
 ln -s ~/.dotfiles/local/share/themes ~/.local/share/
 ln -s ~/.dotfiles/local/share/icons ~/.local/share/

@@ -26,7 +26,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
 }
 # set pronpt style
-PS1='[\u@\h \W [\j] ]$(parse_git_branch)\[\][💀]\n ✘  '
+PS1='[\u@\h \W [\j] ]$(parse_git_branch)\[\]\n ✘ '
 
 force_color_prompt=yes
 
@@ -51,11 +51,6 @@ force_color_prompt=yes
 
 ##---- Aliases -----##
 
-# dwm
-alias startdwm="startx ~/.dwmxinitrc"
-
-# git bare repository
-alias dots='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
 # useful commands shortener
 alias ..="cd .."
