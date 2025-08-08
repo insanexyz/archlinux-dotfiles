@@ -26,7 +26,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
 }
 # set pronpt style
-PS1='[\u@\h \W]$(parse_git_branch)\[\][💀]\n ✘  '
+PS1='[\u@\h \W [\j] ]$(parse_git_branch)\[\][💀]\n ✘  '
 
 force_color_prompt=yes
 
@@ -64,6 +64,7 @@ alias ll="ls -la"
 # all purpose python virtual env
 alias insaneENV="source /home/insane/.virtualenvs/InsanePythonEnv/bin/activate"
 alias stableDiffEnv="source /home/insane/.virtualenvs/StableDiffEnv/bin/activate"
+alias openWebUiEnv="source /home/insane/.virtualenvs/OpenWebUIEnv/bin/activate"
 alias oobaboogaVirtualEnv="source /home/insane/.virtualenvs/oobaboogaVirtualEnv/bin/activate"
 
 # the terminal rickroll
@@ -72,15 +73,16 @@ alias anaconda-navigator="prime-run anaconda-navigator"
 
 ##---- Export ----##
 export EDITOR=vim
-
+#export __NV_PRIME_RENDER_OFFLOAD=0
+#export __GLX_VENDOR_LIBRARY_NAME=nvidia
 
 ##---- Environment Variables ----##
 
 # path
-export PATH="$PATH:/home/insane/.dotnet/tools/:/home/insane/.local/bin/:/home/insane/.local/scripts/:/usr/lib/rstudio:"
+
+export GEM_HOME="$(gem env user_gemhome)"
+export PATH="$PATH:/home/insane/.dotnet/tools/:/home/insane/.local/bin/:/home/insane/.local/scripts/:/usr/lib/rstudio:$GEM_HOME/bin"
 #export python_cmd="python3.11"
-# export __NV_PRIME_RENDER_OFFLOAD=1
-# export __GLX_VENDOR_LIBRARY_NAME=nvidia
 export XDG_CONFIG_HOME="$HOME/.config"
 
 

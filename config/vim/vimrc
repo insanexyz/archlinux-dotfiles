@@ -11,3 +11,4 @@ set nocp    "Disable compatible mode
 syntax on
 colorscheme retrobox
 set bg=dark
+
