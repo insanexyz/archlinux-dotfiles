@@ -213,9 +213,9 @@ set $Script /home/insane/.config/i3/scripts
 
 # Program 
 bindsym $mod+Return exec --no-startup-id urxvt
-bindsym $mod+shift+Return exec --no-startup-id tilda
+#bindsym $mod+shift+Return exec --no-startup-id tilda
 #bindsym $mod+shift+Return exec --no-startup-id alacritty -e tmux
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "Fira Code" -nb "$fg" -nf "$bg" -sb "$bg" -sf "#ffffff" 
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "Envy Code R" -nb "$fg" -nf "$bg" -sb "$bg" -sf "#ffffff" 
 bindsym $mod+Shift+semicolon exec --no-startup-id "i3lock -i /home/insane/Main/Wallpapers/fori3lock/09.png 
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+shift+m exec --no-startup-id rofimoji

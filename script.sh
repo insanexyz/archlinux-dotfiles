@@ -20,10 +20,10 @@ ln -s ~/.dotfiles/config/picom ~/.config/
 ln -s ~/.dotfiles/config/sxiv ~/.config/
 ln -s ~/.dotfiles/config/yt-dlp ~/.config/
 
-ln -s ~/.dotfiles/home/.bashrc ~/
-ln -s ~/.dotfiles/home/.xinitrc ~/
-ln -s ~/.dotfiles/home/.Xresources ~/
-ln -s ~/.dotfiles/home/.profile ~/
+ln -s ~/.dotfiles/.bashrc ~/
+ln -s ~/.dotfiles/.xinitrc ~/
+ln -s ~/.dotfiles/.Xresources ~/
+ln -s ~/.dotfiles/.profile ~/
 
 ln -s ~/.dotfiles/local/scripts ~/.local/
 ln -s ~/.dotfiles/local/share/themes ~/.local/share/

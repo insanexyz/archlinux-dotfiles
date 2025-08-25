@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Check if the user provided a quality value and a target
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <quality> <target>"
+    exit 1
+fi
+
+QUALITY=$1
+TARGET=$2
+
+# Function to convert a single file
+convert_file() {
+    local file="$1"
+    # Get the file name without extension
+    local filename="${file%.*}"
+    # Convert to webp format
+    cwebp -q "$QUALITY" "$file" -o "${filename}.webp"
+    echo "Converted $file to ${filename}.webp"
+}
+
+# Check if the target is a directory or a specific file
+if [ "$TARGET" == "." ]; then
+    # Loop through all jpg and png files in the current directory
+    for file in *.jpg *.png; do
+        # Check if the file exists
+        if [ -f "$file" ]; then
+            convert_file "$file"
+        fi
+    done
+else
+    # Check if the specified target file exists
+    if [ -f "$TARGET" ]; then
+        convert_file "$TARGET"
+    else
+        echo "File $TARGET does not exist."
+        exit 1
+    fi
+fi
+

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/insane/Main/my-websites/resume'
+let g:netrw_dirhist_1='/home/insane/Main/programming/java/cwh/practice_set'
+let g:netrw_dirhist_0='/home/insane/Main/mental-hospital/.git'
+let g:netrw_dirhist_9='/home/insane/Main/my-websites/insanelogs.xyz/jekyll-blog/_sass/minima'
+let g:netrw_dirhist_8='/home/insane/Main/my-websites/insanelogs.xyz/jekyll-blog/_sass'
+let g:netrw_dirhist_7='/home/insane/Main/my-websites/insanelogs.xyz/jekyll-blog/_sass/minima'
+let g:netrw_dirhist_6='/home/insane/Main/my-websites/insanelogs.xyz/jekyll-blog/_sass'
+let g:netrw_dirhist_5='/home/insane/Main/my-websites/insanelogs.xyz/jekyll-blog/_sass/minima'
+let g:netrw_dirhist_4='/home/insane/Main/my-websites/insanelogs.xyz/jekyll-blog/_sass'
+let g:netrw_dirhist_3='/home/insane/Main/my-websites/insanelogs.xyz/jekyll-blog/_sass/minima'

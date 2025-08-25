@@ -1,0 +1,41 @@
+Xcursor.theme: Adwaita 
+Xcursor.size: 24 
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.rgba: rgb
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+
+*.font: xft:Envy Code R:style=Regular:size=14
+
+
+*.background: #181818
+*.foreground: #cdd6f4
+*.cursorColor: #8C8380
+
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+
+! Restore Ctrl+Shift+(c|v)
+URxvt.keysym.Control-Shift-V: eval:paste_clipboard
+URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!! Transparency
+!URxvt*depth: 32
+!URxvt.background: [70]#000000
+
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt*internalBorder: 10
+URxvt.secondaryScroll: false
+
+
+URxvt.keysym.C-KP_Subtract: resize-font:smaller
+URxvt.keysym.C-KP_Add:      resize-font:bigger
+URxvt.keysym.C-equal:       resize-font:reset
+URxvt.keysym.C-question:    resize-font:show
+
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,resize-font

@@ -25,10 +25,10 @@ function parse_git_dirty {
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
 }
-# set pronpt style
-PS1='[\u@\h \W [\j] ]$(parse_git_branch)\[\]\n ✘ '
+# set prompt style
+PS1='\[\e[31m\][\u@\h \W [\j] ]$(parse_git_branch)\[\]\n ✘ \[\e[0m\]'
 
-force_color_prompt=yes
+#force_color_prompt=yes
 
 
 
@@ -55,6 +55,7 @@ force_color_prompt=yes
 # useful commands shortener
 alias ..="cd .."
 alias ll="ls -la"
+alias rg="ranger"
 
 # all purpose python virtual env
 alias insaneENV="source /home/insane/.virtualenvs/InsanePythonEnv/bin/activate"
@@ -95,9 +96,6 @@ set -o noclobber
 # shopt
 shopt -s nullglob globstar
 
-
-#---- Zoxoide (to be at end) -----#
-eval "$(zoxide init bash)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
