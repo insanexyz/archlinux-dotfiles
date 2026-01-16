@@ -7,12 +7,12 @@ Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
 
-*.font: xft:Envy Code R:style=Regular:size=14
+!!*.font: xft:Iosevka Font Mono:style=Regular:size=14
 
 
-*.background: #181818
-*.foreground: #cdd6f4
-*.cursorColor: #8C8380
+!!*.background: #181818
+!!*.foreground: #cdd6f4
+!!*.cursorColor: #8C8380
 
 URxvt.copyCommand: xclip -i -selection clipboard
 URxvt.pasteCommand: xclip -o -selection clipboard

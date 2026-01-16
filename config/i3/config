@@ -191,6 +191,7 @@ for_window [floating] resize set 900 500
 for_window [class="megasync"] floating disable
 for_window [class="MEGAsync"] floating disable
 for_window [class="Matplotlib"] floating enable
+for_window [class="Main"] floating enable
 
 # #----Basic Key binds----# #
 bindsym $mod+Escape	workspace prev
@@ -212,7 +213,7 @@ bindsym $mod+Shift+o resize shrink width 1 px or 1 ppt
 set $Script /home/insane/.config/i3/scripts
 
 # Program 
-bindsym $mod+Return exec --no-startup-id urxvt
+bindsym $mod+Return exec --no-startup-id alacritty
 #bindsym $mod+shift+Return exec --no-startup-id tilda
 #bindsym $mod+shift+Return exec --no-startup-id alacritty -e tmux
 bindsym $mod+d exec --no-startup-id dmenu_run -fn "Envy Code R" -nb "$fg" -nf "$bg" -sb "$bg" -sf "#ffffff" 

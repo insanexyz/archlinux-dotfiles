@@ -26,7 +26,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
 }
 # set prompt style
-PS1='\[\e[31m\][\u@\h \W [\j] ]$(parse_git_branch)\[\]\n ✘ \[\e[0m\]'
+PS1='\[\e[31m\][\u@\h \W [\j] ]$(parse_git_branch)\[\]\n × \[\e[0m\]'
 
 #force_color_prompt=yes
 
@@ -83,7 +83,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 
 
-
 # python modules
 export PYTHONPATH=$PYTHONPATH:/home/insane/.insane/PythonCustomModules:/home/insane/.virtualenvs/InsanePythonEnv/lib/python3.12/site-packages
 
@@ -91,7 +90,7 @@ export PYTHONPATH=$PYTHONPATH:/home/insane/.insane/PythonCustomModules:/home/ins
 ##---- Useful commands ----##
 
 # Prevent overwrites with >
-set -o noclobber
+#set -o noclobber
 
 # shopt
 shopt -s nullglob globstar
