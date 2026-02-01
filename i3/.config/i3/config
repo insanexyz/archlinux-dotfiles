@@ -217,7 +217,7 @@ bindsym $mod+Return exec --no-startup-id alacritty
 #bindsym $mod+shift+Return exec --no-startup-id tilda
 #bindsym $mod+shift+Return exec --no-startup-id alacritty -e tmux
 bindsym $mod+d exec --no-startup-id dmenu_run -fn "Envy Code R" -nb "$fg" -nf "$bg" -sb "$bg" -sf "#ffffff" 
-bindsym $mod+Shift+semicolon exec --no-startup-id "i3lock -i /home/insane/Main/Wallpapers/fori3lock/09.png 
+bindsym $mod+Shift+semicolon exec --no-startup-id "i3lock -i /home/insane/Main/images/fori3lock/09.png 
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+shift+m exec --no-startup-id rofimoji
 
@@ -247,6 +247,7 @@ exec --no-startup-id polychromatic-tray-applet
 exec --no-startup-id nvidia-settings --load-config-only
 exec --no-startup-id dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
 exec --no-startup-id gnome-keyring-daemon --start --components=secrets
+exec --no-startup-id optimus-manager-qt
 
 # #----GAPS----# #
 

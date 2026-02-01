@@ -8,6 +8,8 @@
 # -n -- if symlink folder already exists then donot symlink inside of it
 # -f -- if symlink exists forcefully recreate it. This will ensure the script runs top to bottom
 # -s -- to create sym links
+#
+## Donot run, now the configs are managed by gnu stow instead of manual script.sh symlink file
 
 echo "Creating symlinks...."
 

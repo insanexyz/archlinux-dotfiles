@@ -7,3 +7,5 @@ I use arch btw
 - [ ] Also check in the current folder if that dir exists in the first place to symlink 
    it otherwise it will result in loss of config file.
 
+## Update
+Now using gnu stow to manage my dotfiles.
